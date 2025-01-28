@@ -1,0 +1,116 @@
+#mainPrj {
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-color: #ffffff; /* White background for the form container */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 550px;
+    width: 90%; /* Adjust width for small screens */
+    text-align: center;
+    margin: 10px; /* Small margin for spacing */
+}
+
+h1 {
+    color: #0059b3; /* Medium blue for heading */
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #003366;
+}
+
+input[type="text"],[type="number"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #b3d9ff; /* Light blue border */
+    border-radius: 5px;
+    background-color: #f0faff; /* Very light blue background */
+    font-size: 1rem;
+    color: #003366;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #007acc; /* Highlighted border */
+}
+
+textarea {
+    height: 100px; /* Fixed height for the textarea */
+    resize: none; /* Disable resizing */
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff; /* White text */
+    background-color: #007acc; /* Light blue button background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #005fa3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+input[type="submit"]:active,
+input[type="reset"]:active {
+    background-color: #004f8a; /* Even darker blue on click */
+    transform: scale(1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #mainPrj {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Reduce heading size */
+    }
+
+    input[type="text"]{
+        font-size: 0.9rem; /* Adjust font size for inputs */
+        padding: 8px; /* Reduce padding for inputs */
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        padding: 8px 15px; /* Smaller buttons for small screens */
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem; /* Further reduce heading size */
+    }
+
+    input[type="text"]{
+        font-size: 0.8rem;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        font-size: 0.8rem;
+        padding: 6px 12px; /* Even smaller buttons for extra-small screens */
+    }
+}

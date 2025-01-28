@@ -1,0 +1,76 @@
+  .form-container {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background: #ffffff; /* White background for the form */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #b3daff; /* Light blue border */
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0056b3; /* Darker blue for heading */
+  }
+  
+  .form-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black; /* Blue for labels */
+  }
+  
+  .form-container input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #a6d8ff; /* Light blue border */
+    border-radius: 5px;
+    background-color: #f0faff; /* Very light blue background for input fields */
+    font-size: 14px;
+    color: #003d66; /* Dark blue text */
+  }
+  
+  .form-container input::placeholder {
+    color: #a1cfff; /* Light blue placeholder */
+  }
+  
+  .form-container input:focus {
+    outline: none;
+    border-color: #0056b3; /* Darker blue on focus */
+    background-color: #e0f4ff; /* Slightly darker light blue on focus */
+  }
+  
+  .form-container button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-container .submit-btn {
+    background-color: #007acc; /* Blue background for submit */
+    color: #ffffff; /* White text */
+    margin-bottom: 10px;
+  }
+  
+  .form-container .submit-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .form-container .reset-btn {
+    background-color: #e0f4ff; /* Light blue background for reset */
+    color: #0056b3; /* Blue text */
+  }
+  
+  .form-container .reset-btn:hover {
+    background-color: #cceaff; /* Slightly darker light blue on hover */
+  }
+  
