@@ -3,10 +3,10 @@
     <h1> Create a Project </h1>
     <form>
         <label for="prjName"> Project Name </label>
-        <input type="text" id="prjName" required> 
+        <input type="text" id="prjName" required name="prjName" [(ngModel)]="prjObj.projectName"> 
         <label for="prjDesc"> Project Description </label>
-        <textarea name="text" id="prjDesc"></textarea>
-        <input type="submit" value="Create">  
-        <input type="reset" value="reset"> 
+        <textarea name="text" id="prjDesc" name="prjDesc" [(ngModel)]="prjObj.projectDesc"></textarea>
+        <input type="submit" value="Create" (click)="OnSignup()">  
+        <input type="reset" value="reset" (click)="OnReset()"> 
     </form>
  </div>

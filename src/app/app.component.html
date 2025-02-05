@@ -1,1 +1,33 @@
-<app-home></app-home>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Logo.ico" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a routerLink="/userSignup" routerLinkActive="active">Signup</a>
+            <a routerLink="/userLogin" routerLinkActive="active">Login</a>
+            <a routerLink="/createProject" routerLinkActive="active">Create Project</a>
+            <a routerLink="/joinProject" routerLinkActive="active">Join Project</a>
+        </div>
+        <div class="account">
+            <a routerLink="/account" routerLinkActive="active">My Account</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <router-outlet></router-outlet>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 ProjectManager. All rights reserved.</p>
+        <p>
+            <a routerLink="/privacy-policy">Privacy Policy</a> | 
+            <a routerLink="/terms-of-service">Terms of Service</a>
+        </p>
+    </footer>
+
+</body>

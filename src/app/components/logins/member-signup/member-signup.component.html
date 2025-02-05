@@ -3,10 +3,10 @@
     <h1> Join a Project </h1>
     <form>
         <label for="prjName"> Project Name </label>
-        <input type="text" id="prjName" required> 
+        <input type="text" id="prjName" required name="prjName" [(ngModel)]="memberObj.prjName"> 
         <label for="prjId"> Project ID </label>
-        <input type="number" id="prjId" required> 
-        <input type="submit" value="Join">  
-        <input type="reset" value="reset"> 
+        <input type="number" id="prjId" required name="prjId" [(ngModel)]="memberObj.prjId"> 
+        <input type="submit" value="Join" (click)="OnSubmit()">  
+        <input type="reset" value="reset" (click)="OnReset()"> 
     </form>
  </div>
